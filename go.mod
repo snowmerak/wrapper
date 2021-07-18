@@ -6,7 +6,6 @@ require (
 	github.com/andybalholm/brotli v1.0.3
 	github.com/cloudflare/circl v1.0.0
 	github.com/fasthttp/websocket v1.4.3
-	github.com/gofiber/fiber/v2 v2.15.0
 	github.com/golang/snappy v0.0.4
 	github.com/klauspost/compress v1.13.1 // indirect
 	github.com/savsgio/gotils v0.0.0-20210617111740-97865ed5a873 // indirect
