@@ -9,13 +9,13 @@ var store = map[reflect.Type][]interface{}{}
 
 var mutex = sync.Mutex{}
 
-func Push(item interface{}) {
+func Offer(item interface{}) {
 	mutex.Lock()
 	defer mutex.Unlock()
 	store[reflect.TypeOf(item)] = append(store[reflect.TypeOf(item)], item)
 }
 
-func Get(typ interface{}) interface{} {
+func Poll(typ interface{}) interface{} {
 	mutex.Lock()
 	defer mutex.Unlock()
 	item := store[reflect.TypeOf(typ)][len(store[reflect.TypeOf(typ)])-1]
