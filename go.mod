@@ -12,4 +12,5 @@ require (
 	github.com/ulikunitz/xz v0.5.10
 	github.com/valyala/fasthttp v1.28.0
 	golang.org/x/sys v0.0.0-20210630005230-0f9fa26af87c // indirect
+	google.golang.org/protobuf v1.27.1
 )
